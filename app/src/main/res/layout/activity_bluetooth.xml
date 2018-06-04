@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btconnected"
+    tools:context="org.androidtown.offerproject.Bluetooth">
+
+    <FrameLayout
+        android:layout_marginTop="78dp"
+        android:id="@+id/myframe"
+        android:layout_width="match_parent"
+        android:layout_height="410dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/btn_off"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_off"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn1" />
+
+        <ImageButton
+            android:id="@+id/btn_ctrl"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_ctrl"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn2" />
+
+        <ImageButton
+            android:id="@+id/btn_timer"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_timer"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn3" />
+
+        <ImageButton
+            android:id="@+id/btn_howto"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btn_howto"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn4" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
