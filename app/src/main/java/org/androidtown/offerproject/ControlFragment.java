@@ -17,7 +17,7 @@ import java.io.OutputStream;
 
 public class ControlFragment extends Fragment {
 
-
+    int fire_power=0;
 
     public ControlFragment() {
         // Required empty public constructor
@@ -27,8 +27,6 @@ public class ControlFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Override
@@ -44,12 +42,12 @@ public class ControlFragment extends Fragment {
         SeekBar seekBar = (SeekBar)getActivity().findViewById(R.id.seekBar);
         int fireValue;
         final TextView showValue = (TextView)getActivity().findViewById(R.id.textView);
-
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 //드래그 하는 중에 발생
                 showValue.setText("현재 불세기: "+i);
+                fire_power = i;
             }
 
             @Override
@@ -60,18 +58,15 @@ public class ControlFragment extends Fragment {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 //드래그 멈출때 발생
-               /* if(fire_power==1){
-                    Control.this.sendData("1");
-                    Toast.makeText(getApplicationContext(), "선택된 불세기 : "+ fire_power, Toast.LENGTH_SHORT).show();
+                if(fire_power==1){
+                    ((Bluetooth)getActivity()).sendData("1");
                 }
                 else if(fire_power==2){
-                    Control.this.sendData("2");
-                    Toast.makeText(getApplicationContext(), "선택된 불세기 : "+ fire_power, Toast.LENGTH_SHORT).show();
+                    ((Bluetooth)getActivity()).sendData("2");
                 }
                 else if(fire_power==0){
-                    Control.this.sendData("0");
-                    Toast.makeText(getApplicationContext(), "선택된 불세기 : "+fire_power, Toast.LENGTH_SHORT).show();
-                }*/
+                    ((Bluetooth)getActivity()).sendData("3");
+                }
             }
         });
     }

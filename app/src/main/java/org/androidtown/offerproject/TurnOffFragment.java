@@ -23,10 +23,9 @@ public class TurnOffFragment extends Fragment {
     // TODO: Rename and change types of parameters
 
     ImageButton btn;
-    int count =0;
-    int isoff =0;
     OutputStream mOutputStream = null;
     String mStrDelimiter = "\n";
+
 
     public TurnOffFragment() {
         // Required empty public constructor
@@ -55,6 +54,7 @@ public class TurnOffFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 btn.setImageResource(R.drawable.switchoff);
+                ((Bluetooth)getActivity()).sendData("1");
             }
         });
     }
