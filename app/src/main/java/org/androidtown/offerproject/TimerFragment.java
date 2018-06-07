@@ -107,9 +107,9 @@ public class TimerFragment extends Fragment {
 
                     @Override
                     public void onFinish() {
-                        //Toast.makeText(getContext(), "타이머 끝! 데이터 전송", Toast.LENGTH_SHORT).show();
-                        //TimerFragment.this.sendData("4");
-                        //데이터 전송될것 ㅇㅇ
+                        //타이머 다 돌았을때 => 전원 꺼짐
+                        Toast.makeText(getContext(), "전원이 꺼집니다.", Toast.LENGTH_SHORT).show();
+                        ((Bluetooth)getActivity()).sendData("0");
                     }
                 }.start();
 

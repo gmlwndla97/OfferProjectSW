@@ -54,7 +54,7 @@ public class TurnOffFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 btn.setImageResource(R.drawable.switchoff);
-                ((Bluetooth)getActivity()).sendData("1");
+                ((Bluetooth)getActivity()).sendData("0");
             }
         });
     }

@@ -64,8 +64,11 @@ public class ControlFragment extends Fragment {
                 else if(fire_power==2){
                     ((Bluetooth)getActivity()).sendData("2");
                 }
-                else if(fire_power==0){
+                else if(fire_power==3){
                     ((Bluetooth)getActivity()).sendData("3");
+                }
+                else if(fire_power==0){
+                    ((Bluetooth)getActivity()).sendData("0");
                 }
             }
         });
