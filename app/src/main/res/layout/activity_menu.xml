@@ -28,9 +28,9 @@
         <ImageButton
             android:id="@+id/btn_blt"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
-            android:background="@drawable/blue"
+            android:background="@drawable/blue_change"
             android:onClick="btn_bluetooth"
             android:scaleType="fitCenter" />
 
