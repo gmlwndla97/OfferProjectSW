@@ -1,6 +1,6 @@
 <LinearLayout
-    android:background="#ffffff"
-    android:orientation="horizontal"
+    android:background="@drawable/fragback"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,14 +8,43 @@
     tools:context="org.androidtown.offerproject.TurnOffFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageButton
-        android:layout_marginLeft="75dp"
-        android:id="@+id/turnon"
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:scaleType="fitXY"
-        android:layout_gravity="center"
-        android:background="#ffffff"
-        android:src="@drawable/switchon" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <ImageButton
+            android:id="@+id/turnon"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:background="#00ff0000"
+            android:src="@drawable/switchon" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
 
 </LinearLayout>

@@ -46,8 +46,22 @@ public class ControlFragment extends Fragment {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 //드래그 하는 중에 발생
-                showValue.setText("현재 불세기: "+i);
                 fire_power = i;
+                if(fire_power==1){
+                    showValue.setText("현재 불세기: 약");
+                }
+                else if(fire_power==2){
+                    showValue.setText("현재 불세기: 중");
+                }
+                else if(fire_power==3){
+                    showValue.setText("현재 불세기: 강");
+                }
+                else if(fire_power==4){
+                    showValue.setText("현재 불세기: MAX");
+                }
+                else if(fire_power==0){
+                    showValue.setText("현재 불세기: OFF");
+                }
             }
 
             @Override
@@ -58,7 +72,8 @@ public class ControlFragment extends Fragment {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 //드래그 멈출때 발생
-                if(fire_power==1){
+                //실제 사용
+                /*if(fire_power==1){
                     ((Bluetooth)getActivity()).sendData("1");
                 }
                 else if(fire_power==2){
@@ -67,8 +82,28 @@ public class ControlFragment extends Fragment {
                 else if(fire_power==3){
                     ((Bluetooth)getActivity()).sendData("3");
                 }
+                else if(fire_power==4){
+                    ((Bluetooth)getActivity()).sendData("4");
+                }
                 else if(fire_power==0){
                     ((Bluetooth)getActivity()).sendData("0");
+                }*/
+
+                //동영상용
+                if(fire_power==1){
+                    Toast.makeText(getContext(), "불의세기 : 약 (sendData)", Toast.LENGTH_SHORT).show();
+                }
+                else if(fire_power==2){
+                    Toast.makeText(getContext(), "불의세기 : 중 (sendData)", Toast.LENGTH_SHORT).show();
+                }
+                else if(fire_power==3){
+                    Toast.makeText(getContext(), "불의세기 : 강 (sendData)", Toast.LENGTH_SHORT).show();
+                }
+                else if(fire_power==4){
+                    Toast.makeText(getContext(), "불의세기 : MAX (sendData)", Toast.LENGTH_SHORT).show();
+                }
+                else if(fire_power==0){
+                    Toast.makeText(getContext(), "불의세기 : OFF (sendData)", Toast.LENGTH_SHORT).show();
                 }
             }
         });

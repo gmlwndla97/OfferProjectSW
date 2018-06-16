@@ -17,10 +17,6 @@ import java.io.OutputStream;
 
 public class HowToFragment extends Fragment {
 
-    Button inbtn, outbtn;
-    OutputStream mOutputStream = null;
-    String mStrDelimiter = "\n";
-
 
     public HowToFragment() {
         // Required empty public constructor
@@ -46,42 +42,13 @@ public class HowToFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        init();
-        inbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //HowToFragment.this.sendData("i");
-                Toast.makeText(getContext(), "in 선택", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        outbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //HowToFragment.this.sendData("o");
-                Toast.makeText(getContext(), "out 선택", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     public void init(){
-        inbtn = (Button) getActivity().findViewById(R.id.inbtn);
-        outbtn = (Button) getActivity().findViewById(R.id.outbtn);
+
     }
 
-    void sendData(String paramString)
-    {
-        paramString = paramString + mStrDelimiter;
-        try
-        {
-            mOutputStream.write(paramString.getBytes());
-            return;
-        }
-        catch (Exception e)
-        {
-            Toast.makeText(getContext(), "데이터 전송 중 오류 발생.", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
-        }
-    }
+
 
 }

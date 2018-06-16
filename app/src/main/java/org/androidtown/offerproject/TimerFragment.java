@@ -108,8 +108,8 @@ public class TimerFragment extends Fragment {
                     @Override
                     public void onFinish() {
                         //타이머 다 돌았을때 => 전원 꺼짐
-                        Toast.makeText(getContext(), "전원이 꺼집니다.", Toast.LENGTH_SHORT).show();
-                        ((Bluetooth)getActivity()).sendData("0");
+                        Toast.makeText(getContext(), "전원 OFF (sendData)", Toast.LENGTH_SHORT).show();
+                        //((Bluetooth)getActivity()).sendData("0");
                     }
                 }.start();
 
@@ -225,18 +225,4 @@ public class TimerFragment extends Fragment {
         return tempTask;
     }
 
-    void sendData(String paramString)
-    {
-        paramString = paramString + mStrDelimiter;
-        try
-        {
-            mOutputStream.write(paramString.getBytes());
-            return;
-        }
-        catch (Exception e)
-        {
-            Toast.makeText(getContext(), "데이터 전송 중 오류 발생.", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
-        }
-    }
 }

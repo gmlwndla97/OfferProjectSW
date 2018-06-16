@@ -58,6 +58,7 @@ public class Bluetooth extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bluetooth);
         //checkBluetooth();
+        Toast.makeText(this, "블루투스가 연결된 상태입니다.", Toast.LENGTH_SHORT).show();
     }
 
     //블루투스 사용가능 여부
