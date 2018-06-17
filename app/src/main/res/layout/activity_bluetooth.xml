@@ -25,55 +25,91 @@
     </FrameLayout>
 
     <LinearLayout
-        android:layout_weight="2.2"
-        android:orientation="horizontal"
+        android:layout_weight="1.9"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         >
 
-        <ImageButton
-            android:id="@+id/btn_off"
-            android:layout_width="0dp"
-            android:layout_height="79dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+        <LinearLayout
             android:layout_weight="1"
-            android:background="@drawable/btn1_change"
-            android:onClick="btn_off"
-            android:scaleType="fitCenter" />
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
 
-        <ImageButton
-            android:id="@+id/btn_ctrl"
-            android:layout_width="0dp"
-            android:layout_height="79dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn2_change"
-            android:onClick="btn_ctrl"
-            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
-        <ImageButton
-            android:id="@+id/btn_timer"
-            android:layout_width="0dp"
-            android:layout_height="79dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn3_change"
-            android:onClick="btn_timer"
-            android:scaleType="fitCenter" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
 
-        <ImageButton
-            android:id="@+id/btn_howto"
-            android:layout_width="0dp"
-            android:layout_height="79dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            <ImageButton
+                android:id="@+id/btn_off"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/btn1_change"
+                android:onClick="btn_off"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_ctrl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/btn2_change"
+                android:onClick="btn_ctrl"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_timer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/btn3_change"
+                android:onClick="btn_timer"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_howto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/btn4_change"
+                android:onClick="btn_howto"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_weight="1"
-            android:background="@drawable/btn4_change"
-            android:onClick="btn_howto"
-            android:scaleType="fitCenter" />
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></LinearLayout>
 
     </LinearLayout>
 
