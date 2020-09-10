@@ -11,5 +11,5 @@ OFFer (근거리 통신과 버너 원격 제어를 이용한 쿠킹 IoT 시스�
 
 <img width="600" height="800" src="https://user-images.githubusercontent.com/37864097/92720265-559e2a80-f39f-11ea-95d0-b325a3136c52.png">
 <br/>
-<img width="600" height="800" src="https://user-images.githubusercontent.com/37864097/92720262-53d46700-f39f-11ea-8a69-ebc4dda8129e.png">
+<img width="600" height="800" src="https://user-images.githubusercontent.com/37864097/92720482-9eee7a00-f39f-11ea-89c8-45b7549352f2.png">
 <br/>
