@@ -28,12 +28,12 @@ OFFer는 안드로이드 어플리케이션과 아두이노를 블루투스 통�
 ## 2. 시스템 구조
 OFFer 시스템은 사용자 서비스를 위한 안드로이드 앱과 아두이노 프로그램으로 구성되어 있다.
 <br/>
-https://user-images.githubusercontent.com/37864097/122219938-dcfa6a80-ceea-11eb-8b04-39bde359c6f6.png
+<img width="300" src="https://user-images.githubusercontent.com/37864097/122219938-dcfa6a80-ceea-11eb-8b04-39bde359c6f6.png">
 <br/>
-https://user-images.githubusercontent.com/37864097/122219926-dbc93d80-ceea-11eb-9b2c-f4ee3b1da324.png
-https://user-images.githubusercontent.com/37864097/122219942-dd930100-ceea-11eb-97e4-3abc6b7b0bf1.png
+<img width="300" src="https://user-images.githubusercontent.com/37864097/122219926-dbc93d80-ceea-11eb-9b2c-f4ee3b1da324.png">
+<img width="300" src="https://user-images.githubusercontent.com/37864097/122219942-dd930100-ceea-11eb-97e4-3abc6b7b0bf1.png">
 <br/>
-https://user-images.githubusercontent.com/37864097/122219947-de2b9780-ceea-11eb-89f7-c5c8720801bd.png
+<img width="250" src="https://user-images.githubusercontent.com/37864097/122219947-de2b9780-ceea-11eb-89f7-c5c8720801bd.png">
 <br/><br/>
 
 ## 3. 프로젝트 주요 기능 및 특징
